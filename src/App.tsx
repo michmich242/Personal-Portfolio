@@ -1,0 +1,72 @@
+import React, { useState } from 'react';
+import './App.css';
+
+
+type Line = {
+  id: string;
+  x: number;
+  y: number;
+  dx: number;
+  dy: number;
+  angle: number;
+  distance: number;
+  color: string;
+};
+
+
+
+
+function App() {
+  const [lines, setLines] = useState<Line[]>([]);
+
+  const handleClick = (e : React.MouseEvent<HTMLDivElement>) => {
+    const originX = e.clientX;
+    const originY = e.clientY;
+
+    
+    const newLines: Line[] = Array.from({ length: 20 }, () => {
+      const angle = Math.random() * 2 * Math.PI;
+      const distance = 100 + Math.random() * 150;
+      const dx = Math.cos(angle) * distance;
+      const dy = Math.sin(angle) * distance;
+      return {
+        id: crypto.randomUUID(),
+        x: originX,
+        y: originY,
+        dx,
+        dy,
+        angle,
+        distance,
+        color: `hsl(${Math.random() * 360}, 100%, 60%)`,
+      };
+    });
+
+    setLines((prev) => [...prev, ...newLines]);
+    
+
+    const idsToRemove = new Set(newLines.map(l => l.id));
+    setTimeout(() => {
+      setLines(prev => prev.filter(l => !idsToRemove.has(l.id)));
+    }, 1000);
+  };
+    
+  return (
+    <div className="App" onClick={handleClick}>
+      {lines.map((line) => (
+        <div
+          key={line.id}
+          className="line"
+          style={{
+            left: `${line.x}px`,
+            top: `${line.y}px`,
+            backgroundColor: line.color,
+            transform: `translate(${line.dx}px, ${line.dy}px)`,
+          }}
+        />
+      ))}
+      <p>Click to fire rainbow streaks randomly 🌈</p>
+    </div>
+  );
+}
+
+export default App;
