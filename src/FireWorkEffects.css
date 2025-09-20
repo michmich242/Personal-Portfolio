@@ -1,0 +1,29 @@
+
+.FireWorkEffects {
+  user-select: none;
+  background: transparent;
+  height : 100%;
+  cursor : pointer;
+  inset : 0;
+}
+
+.line {
+  position: fixed;
+  width: 2px;
+  height: 5px;
+  border-radius: 1px;
+  opacity: 1;
+  filter: blur(0.5px);
+  transform-origin: center;
+  animation: fadeAndFly 1s ease-out forwards;
+}
+
+@keyframes fadeAndFly {
+  from {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  to {
+    opacity: 0;
+  }
+}

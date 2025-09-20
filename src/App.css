@@ -1,36 +1,9 @@
-body, html, #root, .App {
-  margin: 0;
-  height: 100%;
-  background-color: #111;
-  overflow: hidden;
-  font-family: sans-serif;
-  color: white;
+h1{
+    color : black;
+    background-color : white;
 }
 
-.App {
-  position: relative;
-  user-select: none;
-  cursor: default;
-}
-
-.line {
-  position: absolute;
-  width: 2px;
-  height: 5px;
-  border-radius: 1px;
-  pointer-events: none;
-  opacity: 1;
-  filter: blur(0.5px);
-  transform-origin: center;
-  animation: fadeAndFly 1s ease-out forwards;
-}
-
-@keyframes fadeAndFly {
-  from {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-  to {
-    opacity: 0;
-  }
+#Cool{
+    background-color: blue;
+    color : green;
 }
