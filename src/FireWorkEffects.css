@@ -1,14 +1,16 @@
 
-.FireWorkEffects {
+.FireWorks {
+  position: fixed;
   user-select: none;
-  background: transparent;
-  height : 100%;
-  cursor : pointer;
   inset : 0;
+  cursor : default;
+  background : transparent;
+  pointer-events: none;
 }
 
 .line {
   position: fixed;
+  cursor: default;
   width: 2px;
   height: 5px;
   border-radius: 1px;

@@ -1,11 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import './FireWorkEffects.css';
-import {createPortal} from "react-dom";
 
 function FireworkEffects() {
   const [lines, setLines] = useState([]);
 
 
+
+  function safeUUID(){
+    if(typeof crypto !== "undefined" && crypto.randomUUID){
+      return crypto.randomUUID();
+    }
+    else{
+      return Date.now().toString(36) + Math.random().toString(36).slice(2);
+    }
+  }
 
 
 
@@ -20,7 +28,7 @@ function FireworkEffects() {
       const dx = Math.cos(angle) * distance;
       const dy = Math.sin(angle) * distance;
       return {
-        id: crypto.randomUUID(),
+        id: safeUUID(),
         x: originX,
         y: originY,
         dx,
@@ -37,20 +45,23 @@ function FireworkEffects() {
     setTimeout(() => {
       setLines((prev) => prev.filter((l) => !idsToRemove.has(l.id)));
     }, 1000);
+
   };
 
 
-  
+
+
   useEffect(() => {
-    window.addEventListener("touchstart", testTouch);
     window.addEventListener("click", handleClick);
     return () => {
       window.removeEventListener("click", handleClick);
     };
   }, []);
 
+
+
   return(
-    <div className="App">
+    <div className="FireWorks">
       {lines.map((line) => (
         <div
           key={line.id}
