@@ -1,14 +1,30 @@
-import './App.css'
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Outlet } from 'react-router-dom';
+import Home from './Home.jsx'
+import NavigationBar from "./NavigationBar.jsx";
+
 
 
 
 function App(){
 
+    function Layout(){
+        return (
+            <>
+            <NavigationBar/>
+            <Outlet/>
+            </>
+        );
+    }
+
+
+
 
     return(
+
         <Routes>
-            <Route></Route>
+            <Route element={<Layout/>}>
+                <Route path='/' element={<Home/>}></Route>
+            </Route>
         </Routes>
     )
 

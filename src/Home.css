@@ -1,0 +1,141 @@
+
+
+.AboutMe.fade-in{
+    --delay : 100ms;
+}
+.WelcomeTop.fade-in{
+    --delay : 500ms;
+}
+
+.WelcomeTop #Welcome.fade-in{
+    --delay : 1s;
+}
+
+.AboutMe .WelcomeTop #InfoAbout.fade-in{
+    --delay : 300ms;
+}
+
+.Projects{
+    position : relative;
+    border: 2px solid;
+    border-radius: 10%;
+    border-color: antiquewhite;
+    box-shadow: 5px 5px 10px rgba(231, 228, 236, 0.5);
+    top : 1000px;
+    left : 50px;
+    width : 300px;
+    height : 300px;
+    background-color: rgba(12, 11, 49, 0.9);
+    color : white;
+    font-style: Arial, sans-serif;
+    text-align: center;
+}
+
+.AboutInfo{
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;     
+    min-height: 100vh;
+    gap : 100px;
+}
+
+
+.AboutMe{
+    position : relative;
+    height : 200px;
+    width : 80%;
+    border : 2px solid;
+    border-radius: 10px;
+    border-color: rgb(1, 68, 68);
+    box-shadow: 5px 5px 10px rgba(1, 54, 78, 0.5);
+    background-color: rgba(0, 6, 7, 0.9);
+    transition: border-color 300ms ease, box-shadow 300ms ease, translate 300ms ease;
+}
+
+.AboutMe:hover{
+    border-color: rgb(49, 113, 145);
+    translate : 0 -5px;
+    box-shadow: 0 16px 36px rgba(0,0,0,.35);
+
+}
+
+
+.WelcomeTop #Welcome{
+    text-align: center;
+}
+
+
+.WelcomeTop{
+    color :white;
+    font-family: monospace;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: fadeIn 800ms ease-out var(--delay, 120ms) 1 forwards;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity : 0;
+    }
+
+    100% { 
+        opacity: 1; transform: translateY(0); 
+    }
+}
+
+
+
+.AboutMe .WelcomeTop #InfoAbout{
+    position : flex;
+    font-family: monospace;
+    margin-top: 20px;
+    margin-left: 20px;
+    max-height: 400px;
+    min-height: 200px;
+    max-width : 100vw;
+    min-width: 200px;
+    font-weight: 300;
+    font-size: 20px;
+    word-spacing: 3px;
+}
+
+
+.AboutInfo #Education{
+    height : 500px;
+}
+
+
+.AboutInfo #Education #EducationLevel{
+    font-family: monospace;
+    text-align: center;
+    color : white;
+
+}
+.AboutInfo #Education #UniInfo{
+    position: relative;
+    font-family: monospace;
+    color : rgb(42, 184, 7);
+    height : 200px;
+    width : 450px;
+    left: 300px;
+    bottom : 100px;
+    font-size: larger;
+}
+
+
+.AboutInfo #Education #PSULogo{
+    position : relative;
+    max-width : 150px;
+    min-height: 50px;
+    min-height: 50px;
+    max-height : 150px;
+    margin-left: 50px;
+    top : 50px;
+    
+}
