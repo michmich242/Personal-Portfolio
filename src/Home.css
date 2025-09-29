@@ -15,44 +15,40 @@
     --delay : 300ms;
 }
 
-.Projects{
-    position : relative;
-    border: 2px solid;
-    border-radius: 10%;
-    border-color: antiquewhite;
-    box-shadow: 5px 5px 10px rgba(231, 228, 236, 0.5);
-    top : 1000px;
-    left : 50px;
-    width : 300px;
-    height : 300px;
-    background-color: rgba(12, 11, 49, 0.9);
-    color : white;
-    font-style: Arial, sans-serif;
-    text-align: center;
+#Education.fade-in{
+    --delay : 100ms;
 }
+
+#Education .PCCInfo{
+  --delay : 300ms;
+}
+
 
 .AboutInfo{
     position: relative;
-    top: 150px;
     display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center;     
-    min-height: 100vh;
+    margin-top: 200px;
     gap : 100px;
+    flex : 1;
 }
 
 
-.AboutMe{
-    position : relative;
-    height : 200px;
-    width : 80%;
-    border : 2px solid;
-    border-radius: 10px;
-    border-color: rgb(1, 68, 68);
-    box-shadow: 5px 5px 10px rgba(1, 54, 78, 0.5);
-    background-color: rgba(0, 6, 7, 0.9);
-    transition: border-color 300ms ease, box-shadow 300ms ease, translate 300ms ease;
+.AboutMe {
+  position: relative;
+  min-height: 350px;   
+  height: auto;        
+  width: auto;
+  border: 2px solid;
+  border-radius: 10px;
+  border-color: rgb(1, 68, 68);
+  box-shadow: 5px 5px 10px rgba(1, 54, 78, 0.5);
+  background-color: rgba(0, 6, 7, 0.9);
+  transition: border-color 300ms ease, box-shadow 300ms ease, translate 300ms ease;
+  padding: 16px 20px; 
+  box-sizing: border-box;
 }
 
 .AboutMe:hover{
@@ -89,25 +85,32 @@
     }
 }
 
+.AboutMe *{
+    max-width: 100%;
+    box-sizing: border-box;
 
+}
 
 .AboutMe .WelcomeTop #InfoAbout{
-    position : flex;
     font-family: monospace;
     margin-top: 20px;
     margin-left: 20px;
     max-height: 400px;
     min-height: 200px;
-    max-width : 100vw;
+    max-width : 900px;
     min-width: 200px;
     font-weight: 300;
-    font-size: 20px;
+    font-size: clamp(14px, 2.2vw, 20px);
     word-spacing: 3px;
 }
 
 
 .AboutInfo #Education{
     height : 500px;
+    display : flex;
+    flex-direction: column;
+    gap : 50px;
+    
 }
 
 
@@ -117,25 +120,239 @@
     color : white;
 
 }
-.AboutInfo #Education #UniInfo{
+.AboutInfo #Education #PSUInfo{
     position: relative;
+    display : flex;
     font-family: monospace;
     color : rgb(42, 184, 7);
-    height : 200px;
-    width : 450px;
-    left: 300px;
-    bottom : 100px;
+    max-height : 400px;
+    min-height: 100px;
+    min-width: 100px;
+    max-width : 800px;
     font-size: larger;
+    gap : 50px;
 }
 
 
-.AboutInfo #Education #PSULogo{
+.AboutInfo #Education .UniLogo{
     position : relative;
     max-width : 150px;
-    min-height: 50px;
+    min-width: 50px;
     min-height: 50px;
     max-height : 150px;
-    margin-left: 50px;
-    top : 50px;
-    
+    margin-left: 50px;    
+}
+
+.AboutInfo .AboutMe .WelcomeTop #MichelK{
+    max-width : 170px;
+    max-height : 300px;
+    min-width: 70px;
+    min-height: 200px;
+    border-radius: 15%;
+}
+
+.AboutInfo .AboutMe .WelcomeTop #Desc_Pic{
+    position : relative;
+    display : flex;
+    gap : 150px;
+
+}
+
+.AboutInfo #Education .PCCInfo #PCCAdjust{
+  position: relative;
+  max-width : 200px;
+  margin-left: 0;
+  max-height: 700px;
+  margin-top: 50px;
+} 
+
+.AboutInfo #Education .PCCInfo{
+  position : relative;
+  display: flex;
+  font-family: monospace;
+  color : rgb(85, 173, 224);
+  font-size: larger;
+  gap : 30px;
+
+}
+
+
+.AboutInfo #Education .PCCInfo #PCCHeading{
+  margin-top: 37px;
+  font-size: 21px;
+}
+
+
+.AboutInfo #Skills{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height : auto;
+  max-width: 1700px;
+  margin-bottom: 190px;
+  gap : 100px;
+  align-items: stretch;
+}
+
+.AboutInfo #Skills .TechTitle{
+  position : relative;
+  text-align: center;
+  color : white;
+  font-size: 24px;
+  bottom: 60px;
+  font-family: monospace;
+}
+
+
+.AboutInfo #Skills #SoftTitle{
+  color : white;
+}
+
+
+
+
+.AboutInfo #Skills #Technical_Skills{
+  margin-top: 60px;
+  display : flex;
+  flex-direction: column;
+}
+
+.AboutInfo #Skills #Technical_Skills .SCard-Container,
+.AboutInfo #Skills #Soft_Skills .SCard-Container
+
+{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  align-items:flex-start;
+  justify-content:flex-start;
+}
+
+.AboutInfo #Skills #Soft_Skills{
+  margin-top: 60px;
+  display : flex;
+  flex-direction: column;
+  
+}
+
+
+.SCard{
+  position : relative;
+  display : flex;
+  flex-direction: column;
+  width : 80px;
+  height : auto;
+  border: 2px solid;  
+  border-color: rgb(56, 58, 58);
+  border-radius: 2%;
+  padding-bottom: 5px;
+  margin-left: 20px;
+  transition : border-color ease 700ms;
+
+
+}
+.SCard img{
+  display : block;
+  margin : 12px;
+  width : 50px;
+}
+
+.SCard .Card-Name{
+  position: relative;
+  color : white;
+  width : 100%;
+  font-family: monospace;
+  text-align: center;
+  font-size: larger;
+
+  overflow-wrap : anywhere;
+  font-size: clamp(10px, 2vw, 14px);
+
+}
+.SCard:hover{
+  border-color : rgb(0, 153, 153);
+  
+}
+
+
+.AboutInfo #Skills #Technical_Skills #LanguageTitle{
+  width : 100%;
+  text-align: center;
+  padding-bottom: 10px;
+  color: white;
+  margin-top: -25px;
+  font-size: 23px;
+  font-family: monospace;
+}
+
+
+
+.AboutInfo #Skills #Technical_Skills #FrameWorksTitle{
+  width : 100%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom : 15px;
+  color : white;
+  font-size: 23px;
+  font-family: monospace;
+}
+
+.SCard .overflow-handle {
+    font-size: clamp(10px, 1.5vw, 11px);
+
+}
+
+.AboutInfo .Resume-Container{
+  display : flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.AboutInfo .Resume-Container a{
+  text-decoration: none;
+  color : rgb(6, 71, 250);
+  font-family: monospace;
+  margin-left: 10px;
+  font-size : 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+.AboutInfo .Documentation-Container #Docs-Title{
+    font-family: monospace;
+    color : white;
+    text-align: center;
+}
+
+.AboutInfo .Documentation-Container .Resume-Container #Resume{
+  width : 500px;
+}
+
+.AboutInfo #Resume{
+  cursor : zoom-in;
+}
+
+.ResumeThumb {
+  width: 100%;
+  max-width: 600px;
+  cursor: zoom-in;
+}
+
+.Lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.LightboxImg {
+  max-width: 96vw;
+  max-height: 96vh;
+  width: auto;
+  height: auto;
+  cursor: zoom-out;
 }

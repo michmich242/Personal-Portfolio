@@ -5,6 +5,7 @@
     justify-content: center;
     gap : 75px;
     padding-top: 15px;
+    margin-bottom: 120px;
 }
 
 .NavigationBar-Container .NavStyle{
@@ -66,4 +67,23 @@
         transform: translateY(0);
     }
     
+}
+
+@media (max-width: 768px) {
+  .NavigationBar-Container {
+    gap: 14px;
+  }
+  .NavigationBar-Container .NavStyle {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .NavigationBar-Container {
+    gap: 15px;
+    padding: 6px;
+  }
+  .NavigationBar-Container .NavStyle {
+    font-size: 14px;
+  }
 }

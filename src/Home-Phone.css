@@ -1,0 +1,64 @@
+@media (max-width: 520px) {
+
+  .AboutInfo{
+    margin-top: 16px;
+  }
+
+  .AboutInfo #Skills{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    width: 100%;
+    height: auto;
+  }
+
+
+  .AboutInfo #Skills #Technical_Skills{
+    margin-top: 16px;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .AboutInfo #Skills .TechTitle{
+    position: static;
+    margin: 0 0 8px 0;
+    font-size: clamp(18px, 5vw, 22px);
+    text-align: center;
+  }
+
+  .AboutInfo #Skills #Technical_Skills #LanguageTitle,
+  .AboutInfo #Skills #Technical_Skills #FrameWorksTitle{
+    font-size: clamp(16px, 4.2vw, 18px);
+    margin: 4px 0 6px;
+    text-align: center;
+  }
+
+  /* Card grid on mobile */
+  .AboutInfo #Skills #Technical_Skills .SCard-Container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(86px, 1fr));
+    gap: 10px 12px;
+    justify-items: center;
+    width: 100%;
+  }
+
+  /* Tiny cards */
+  .SCard{
+    width: 100%;
+    max-width: 110px;
+    padding: 10px 8px;
+    height: auto;
+    margin-left: 0;
+    border-radius: 8px;
+  }
+
+  .SCard img{ width: 40px; margin: 0; }
+  .SCard .Card-Name{
+    margin-top: 6px;
+    font-size: clamp(10px, 3.2vw, 12px);
+    text-align: center;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+  .SCard .overflow-handle{ font-size: clamp(10px, 3.2vw, 11px); }
+}

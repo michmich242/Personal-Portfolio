@@ -1,0 +1,93 @@
+
+@media (max-width: 768px) {
+
+  .AboutInfo{
+    gap: 48px;
+    min-height: auto;
+    padding: 0 16px;
+  }
+
+  .AboutMe{
+    width: 92%;
+    margin: 0 auto;
+    padding: 14px 16px;
+  }
+
+  .WelcomeTop #Welcome{
+    font-size: clamp(20px, 5.5vw, 28px);
+    line-height: 1.2;
+  }
+
+  .AboutMe .WelcomeTop #InfoAbout{
+    margin-top: 12px;
+    margin-left: 0;
+    max-width: 100%;
+    line-height: 1.45;
+    word-spacing: 1px;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+  }
+
+  .AboutInfo #Education{
+    height: auto;
+    gap: 16px;
+  }
+
+  .AboutInfo #Education #PSUInfo{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 16px;
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .AboutInfo #Education .UniLogo{
+    margin-left: 0;
+    max-width: 120px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+  }
+
+  .AboutInfo #Education .PCCInfo{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 16px;
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .AboutInfo .AboutMe .WelcomeTop #MichelK{
+    max-width: 120px;
+    max-height: 220px;
+    min-width: 60px;
+    min-height: 120px;
+  }
+
+  .AboutInfo .AboutMe .WelcomeTop #Desc_Pic{
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Projects{
+    position: static;
+    width: 92%;
+    height: auto;
+    margin: 24px auto 0;
+    padding: 16px;
+    top: auto;
+    left: auto;
+    border-radius: 16px;
+  }
+
+  .fade-in {
+    transform: translateY(4px);
+    animation-duration: 600ms;
+  }
+}
+
