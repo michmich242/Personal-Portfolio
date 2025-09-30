@@ -33,7 +33,7 @@
     text-align: center;
   }
 
-  /* Card grid on mobile */
+
   .AboutInfo #Skills #Technical_Skills .SCard-Container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(86px, 1fr));
@@ -42,7 +42,6 @@
     width: 100%;
   }
 
-  /* Tiny cards */
   .SCard{
     width: 100%;
     max-width: 110px;
@@ -52,7 +51,10 @@
     border-radius: 8px;
   }
 
-  .SCard img{ width: 40px; margin: 0; }
+  .SCard img{ 
+    width: auto; margin: 0;
+    justify-self: center;
+   }
   .SCard .Card-Name{
     margin-top: 6px;
     font-size: clamp(10px, 3.2vw, 12px);
@@ -60,5 +62,7 @@
     overflow-wrap: anywhere;
     word-break: break-word;
   }
-  .SCard .overflow-handle{ font-size: clamp(10px, 3.2vw, 11px); }
+  .SCard .overflow-handle{ 
+    font-size: clamp(10px, 3.2vw, 11px); 
+  }
 }

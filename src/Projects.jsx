@@ -22,6 +22,7 @@ function Projects(){
                         <p className="el_used">MongoDB</p>
                         <p className="el_used">Express</p>
                         <p className="el_used">RestAPI's</p>
+
                     </div>
             
                 </div>
