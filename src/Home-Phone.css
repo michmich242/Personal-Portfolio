@@ -34,7 +34,9 @@
   }
 
 
-  .AboutInfo #Skills #Technical_Skills .SCard-Container{
+  .AboutInfo #Skills #Technical_Skills .SCard-Container,
+  .AboutInfo #Skills #Soft_Skills .SCard-Container
+  {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(86px, 1fr));
     gap: 10px 12px;
