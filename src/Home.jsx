@@ -46,7 +46,7 @@ function Home(){
             <div className="Documentation-Container AboutMe fade-in">
                 <h1 id="Docs-Title">Documentation</h1>
                 <div className="Resume-Container">
-                    <a href="/MichelK.pdf" target="_blank" rel="noopener noreferrer" className="ResumeButton">
+                    <a href="/MichelK-Resume.pdf" target="_blank" rel="noopener noreferrer" className="ResumeButton">
                     Resume
                     </a>
 
