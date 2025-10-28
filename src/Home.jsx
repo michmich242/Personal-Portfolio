@@ -29,7 +29,7 @@ function Home(){
                     <img className="UniLogo fade-in" src="/logomark_green.png"></img>
                     <div style={{"marginTop" : "10px"}}>
                         <h2 className="fade-in">Portland State University</h2>
-                        <p>B.S. in Computer Science  September 2023 - March 2026</p>
+                        <p>B.S. in Computer Science  September 2023 - December 2026</p>
                         <p style={{"marginTop" : "10px "}}>Relevant Coursework: Data Structures, Algorithms & Complexity, DBMS, Applied Linear Algebra, AI</p>
                     </div>
                 </div>
