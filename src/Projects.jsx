@@ -11,6 +11,29 @@ function Projects(){
     return (
         <>
         <div className="ProjectsContainer fade-in">
+
+            <div id="CoralNet" className="Projects fade-in" onClick={() => {
+                window.open("https://github.com/jadsaad06/AI-Fishbowl", "_blank", "noopener, noreferrer")
+            }}>
+                <img className= "size-down" src="/seahorse.png"></img>
+                <div className="Attributes">
+                    <h1 className="Title">CoralNet (AI Fishbowl)<span className="project-tag">New</span></h1>
+                    <div className="ProjDetails">
+                        <p className="el_used">Electron</p>
+                        <p className="el_used">Python</p>
+                        <p className="el_used">FastAPI</p>
+                        <p className="el_used">LangChain</p>
+                        <p className="el_used">ChromaDB (RAG DB)</p>
+                        <p className="el_used">MCP Client & Server</p>
+                    </div>
+
+                </div>
+                
+                <p className="Description">A real-time conversational AI installation showcasing 5 voice-interactive fish personalities powered by a multi-agent LLM system, with specialized tools provided by MCP servers for each character. My work focused on the Agents, LLM, backend stack, MCP Client/Server implementation, MCP tool integration, project architecture communication, and RAG DB system.</p>
+
+
+            </div>
+
             <div id="PrepAndCount" className="Projects fade-in" onClick={() =>{
                 window.open("https://github.com/michmich242/PrepAndCount", "_blank", "noopener, noreferrer");
             }}>
@@ -22,7 +45,6 @@ function Projects(){
                         <p className="el_used">MongoDB</p>
                         <p className="el_used">Express</p>
                         <p className="el_used">RestAPI's</p>
-
                     </div>
             
                 </div>
