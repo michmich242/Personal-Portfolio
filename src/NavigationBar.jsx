@@ -16,6 +16,7 @@ function NavigationBar(){
         <>
         <div className="NavigationBar-Container fade-in">
             <Link className="NavStyle" to="/">Home</Link>
+            <Link className="NavStyle" to="/Experience">Experience</Link>
             <Link className="NavStyle" to="/Projects">Projects</Link>
             <Link className="NavStyle" to="/Contact">Contact</Link>
         </div>

@@ -1,6 +1,7 @@
 .NavigationBar-Container{
     position : relative;
     display: flex;
+    flex-wrap: wrap;
     top : 50px;
     justify-content: center;
     gap : 75px;
@@ -80,10 +81,14 @@
 
 @media (max-width: 480px) {
   .NavigationBar-Container {
-    gap: 15px;
-    padding: 6px;
+    gap: 10px;
+    padding: 6px 10px;
+    top: 20px;
+    margin-bottom: 60px;
+    max-width: 100%;
   }
   .NavigationBar-Container .NavStyle {
-    font-size: 14px;
+    font-size: 13px;
+    padding: 8px 14px;
   }
 }

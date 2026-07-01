@@ -17,7 +17,7 @@ function Home(){
                 <div className="WelcomeTop fade-in">
                     <h1 id="Welcome"  className="fade-in">About me</h1>
                     <div id="Desc_Pic">
-                        <p id="InfoAbout" className="fade-in">Hello, my name is Michel Karam, and I am from Portland Oregon. I'm a passionate Senior Computer Science major at Portland State University! I enjoy researching AI, ML algorithms, and software engineering. My goal is to become a software engineer who builds technology that makes life easier and more enjoyable. Outside of Computer Science, I love playing basketball, travelling, and trying out new food!</p>
+                        <p id="InfoAbout" className="fade-in">Hello, my name is Michel Karam, and I am from Portland Oregon. I'm a passionate Graduate Computer Scientist at Portland State University! I enjoy researching AI, ML algorithms, and software engineering. My goal is to become an AI engineer who builds technology that makes life easier and more enjoyable. Outside of Computer Science, I love playing basketball, travelling, and trying out new food!</p>
                         <img id="MichelK" src="/MichelK.png"></img>
                     </div>
 
@@ -29,8 +29,8 @@ function Home(){
                     <img className="UniLogo fade-in" src="/logomark_green.png"></img>
                     <div style={{"marginTop" : "10px"}}>
                         <h2 className="fade-in">Portland State University</h2>
-                        <p>B.S. in Computer Science  September 2023 - December 2026</p>
-                        <p style={{"marginTop" : "10px "}}>Relevant Coursework: Data Structures, Algorithms & Complexity, DBMS, Applied Linear Algebra, AI</p>
+                        <p>B.S. in Computer Science  September 2023 - June 2026</p>
+                        <p style={{"marginTop" : "10px "}}>Relevant Coursework: Data Structures, Algorithms & Complexity, Applied Linear Algebra, AI, Web & Cloud Security, Internet & Cloud Security Internet & Network PRTCLS</p>
                     </div>
                 </div>
                 <div className="PCCInfo fade-in">
